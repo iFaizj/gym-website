@@ -1,0 +1,207 @@
+<!-- 
+
+    WEB PROGRAMMING
+    SECTION 12
+    GROUP 11
+
+    AHMMAD ABDULRAHMAN ALMULLA
+    U22101081
+
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Document Config -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FitLife - Progress Tracker (BMI)</title>
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/workout-plan.css">
+        <link rel="stylesheet" href="./styles/progress-tracker.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+        <!-- Website Logo -->
+        <header><img src="img/fitlife-logo-webprj.png" alt="FitLife Logo"></header>
+
+        <!-- Navigation Links-->
+        <div class="NavigationBar">
+
+            <a href="index.html">Home</a>
+            <a href="Workout_Plan.html">Workout plan</a>
+            <a href="ex-library.html">Exercise Library </a>
+            <a href="diet plan.html">Diet Plan</a>
+            <a href="ProgressTracker.html">Progress Tracker </a>
+
+        </div>
+
+    <!-- Hero Header -->
+    <div class="hero-image">
+
+        <div class="hero-text">
+
+          <h1>Track Your Progress <br />,Your BMI, and Body Fat<br /><h5>By AHMMAD ABDULRAHMAN ALMULLA</h5></h1>
+
+        </div>
+
+    </div>
+
+    <!-- BMI Calculator -->
+    <div>
+
+        <div class="Workout-Form" id="progressPage">
+
+            <!-- The BMI Calculator Form -->
+            <form id="bmi-calculator">
+
+                <h2>BMI and Body Fat Calculator</h2>
+
+                <!-- BMI Input Fields -->
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <br>
+
+                <!-- Inputing Weight-->
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <br>
+
+                <!-- Selecting Gender-->
+                <label for="gender">Gender:</label>
+
+                <div class="gender-container">
+
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                </div>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <button type="button" onclick="calculateBMI()">Calculate Results</button>
+
+                <!-- Body Fat Result Table -->
+                <table id="BMI-BodyFat-result" style="margin-top: 20px; display: none;">
+
+                    <thead>
+
+                        <tr>
+
+                            <th colspan="2">
+
+                                BMI and Body-Fat Calculation Results
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <!-- BMI Result Table -->
+                    <tbody>
+
+                        <tr>
+
+                            <td style="text-align: left;">BMI:</td>
+                            <td id="BMI-Result"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="text-align: left;">Body Fat:</td>
+                            <td id="BodyFat-Result"></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <!-- BMI Result Details -->
+                <table id="bmi-range-table" border="1" style="margin-top: 20px; width: 100%; text-align: center;">
+
+                    <thead>
+
+                        <tr>
+
+                            <th colspan="2">BMI Range Category</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <!-- The Result Category -->
+                    <tbody>
+
+                        <tr id="underweight">
+
+                            <td>Underweight</td>
+                            <td>Under 18.5</td>
+
+                        </tr>
+
+                        <tr id="normal-weight">
+
+                            <td>Normal weight</td>
+                            <td>Between 18.5 - 24.9</td>
+
+                        </tr>
+
+                        <tr id="overweight">
+
+                            <td>Overweight</td>
+                            <td>Between 25.0 - 29.9</td>
+
+                        </tr>
+
+                        <tr id="Obesity">
+
+                            <td>Obesity</td>
+                            <td>Between 30.0 - 34.9</td>
+                            
+                        </tr>
+
+                        <tr id="Above-Obesity">
+
+                            <td>Above Obesity</td>
+                            <td>Above 35.0</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </form>
+
+        </div>
+    
+    <!-- Footer -->
+        <footer class="footer">
+
+            <p><strong>&copy Copyright 2024 Group 11. All Rights Reserved.</strong></p>
+
+        </footer>
+
+    <!-- JavaScript -->
+     <script src="./js/progress-tracker.js"></script>
+
+</body>
+
+</html>

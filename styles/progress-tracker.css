@@ -1,0 +1,60 @@
+#BMI-BodyFat-result{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#BMI-BodyFat-result:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#BMI-BodyFat-result td, th{
+    text-align: center;
+    padding: 8px;
+}
+
+#BMI-BodyFat-result tr{
+    border: 2px solid rgb(43, 43, 43);
+    background-color: rgb(109, 150, 158);
+}
+
+#BMI-BodyFat-result th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgba(36, 65, 87, 1);
+    color: white;
+}
+
+#BMI-BodyFat-result tr:hover{
+    background-color: rgba(36, 65, 87, 0.678);
+    color: rgb(109, 150, 158);
+}  
+
+#bmi-range-table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#bmi-range-table:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#bmi-range-table td, th{
+    text-align: center;
+    padding: 8px;
+}
+
+#bmi-range-table tr{
+    border: 2px solid rgb(43, 43, 43);
+    background-color: rgb(109, 150, 158);
+}
+
+#bmi-range-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgba(36, 65, 87, 1);
+    color: white;
+}

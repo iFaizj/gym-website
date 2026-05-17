@@ -1,0 +1,104 @@
+<!-- 
+
+    WEB PROGRAMMING
+    SECTION 12
+    GROUP 11
+
+    ABDUL RAHMAN SAMER FARACHI 
+    U22100516
+
+ -->
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+    <!-- Document Config -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FitLife - Exercise Library</title>
+
+    <!-- CSS Styles -->
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/ex-library.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+        <!-- Website Logo -->
+        <header><img src="img/fitlife-logo-webprj.png" alt="FitLife Logo"></header>
+
+        <!-- Navigation Links-->
+        <div class="NavigationBar">
+
+            <a href="index.html">Home</a>
+            <a href="Workout_Plan.html">Workout plan</a>
+            <a href="ex-library.html">Exercise Library </a>
+            <a href="diet plan.html">Diet Plan</a>
+            <a href="ProgressTracker.html">Progress Tracker </a>
+
+        </div>
+
+    <!-- Hero Header -->
+        <div class="hero-image">
+
+            <div class="hero-text">
+
+                <h1>Your Complete Guide to Workouts & Fitness<br /><br /><h5>By ABDUL RAHMAN SAMER FARACHI</h5></h1> <!-- Page Title -->
+
+            </div>
+
+        </div>
+
+    <!-- Exercise Library -->
+
+        <h2>Exercise Library</h2> <!-- Page Subtitle -->
+        
+        <div class="ex-lib-wrapper">
+
+            <div class="ex-lib">
+
+                <!-- Search Field -->
+                    <div class="library-search">
+
+                        <!-- Selecting Difficulty-->
+                            <div class="selection">
+
+                                <label for="WorkoutDifficulty">Workout Difficulty</label>
+
+                                <select name="WorkoutDifficulty" id="WorkoutDifficulty">
+                                    <option value="beginner" selected>Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="expert">Expert</option>
+                                </select>
+
+                            </div>
+
+                        <button id="search-lib">Search Library</button>
+
+                    </div>
+
+                <!-- Generated Exercises -->
+                    <div id="gen-exercises"></div>
+            </div>
+
+        </div>
+
+    <!-- Footer -->
+        <footer class="footer">
+
+            <p><strong>&copy Copyright 2024 Group 11. All Rights Reserved.</strong></p>
+    
+        </footer>
+    
+    <!-- JavaScript -->
+        <script src="./js/ex-lib.js"></script>
+
+</body>
+
+</html>

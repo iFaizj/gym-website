@@ -1,0 +1,131 @@
+/* Styles for H2, H3, and H5 */
+h2, h3, h5 {
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+/*  Overriding the margin-top for H5 */
+h5 {
+    margin-top: -30px;
+}
+
+/* The wrapper that holds the search and the result */
+.ex-lib-wrapper {
+    padding: 50px;
+}
+
+.ex-lib {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.ex-lib .library-search { /* The search field */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The selection dropdown element */
+.ex-lib .library-search select {
+    width: 50vw;
+    height: 50px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.ex-lib .library-search label {
+    color: white;
+}
+
+.ex-lib .library-search .selection {
+    display: flex;
+    flex-direction: column;
+}
+
+.ex-lib .library-search #search-lib {
+    width: 50vw;
+    color: white;
+    height: 50px;
+    background-color: rgb(109, 150, 158);
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.ex-lib .library-search #search-lib:hover {
+    background-color: rgb(93, 129, 136);
+}
+
+/* The generated search result */
+.ex-lib .gen-exercises {
+    margin-top: 25px;
+}
+
+.ex-lib .gen-exercises .searched-field {
+    font-style: italic;
+    font-weight: normal;
+    color: rgb(109, 150, 158);
+}
+
+.generatedPlan {
+    padding: 2px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align the link at the bottom */
+    height: 100%; /* Allow the container to fill the card's height */
+}
+
+/* The exercises - cards format */
+.ExerciseItem {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(34, 34, 34);
+    background-color: rgb(24, 24, 24);
+    transition: all 0.3s ease-in-out; /* Makes a smoother animation */
+    margin-top: 20px;
+} 
+
+.ExerciseItem:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.ExerciseImg {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.ExerciseName {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: start;
+    line-height: 30px;
+    padding-left: 15px;
+    color: white;
+}
+
+/* The difficulty label in the cards (Comes below the exercise title) */
+
+.searched-field {
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(109, 150, 158);
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Diet Plan & Nutrition</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Personalized Diet Plan & Nutrition</h1>
+        <p>Get customized meal plans based on your fitness goals and dietary preferences.</p>
+    </header>
+
+    <section id="meal-plan-form">
+        <form id="mealPlanForm">
+            <h2>Get Your Personalized Meal Plan</h2>
+
+            <!-- Dietary Preferences -->
+            <label for="dietaryPreferences">Dietary Preferences:</label>
+            <select id="dietaryPreferences" name="dietaryPreferences" required>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="lowCarb">Low Carb</option>
+                <option value="highProtein">High Protein</option>
+            </select>
+
+            <!-- Fitness Goals -->
+            <label for="fitnessGoals">Fitness Goals:</label>
+            <select id="fitnessGoals" name="fitnessGoals" required>
+                <option value="muscleGain">Muscle Gain</option>
+                <option value="fatLoss">Fat Loss</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+
+            <!-- Calorie Calculation Inputs -->
+            <h3>Calorie Requirement</h3>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+             <br>
+            <label for="activityLevel">Activity Level:</label>
+            <select id="activityLevel" name="activityLevel" required>
+                <option value="sedentary">Sedentary (little to no exercise)</option>
+                <option value="light">Light (1-3 days/week)</option>
+                <option value="moderate">Moderate (3-5 days/week)</option>
+                <option value="active">Active (6-7 days/week)</option>
+                <option value="veryActive">Very Active (hard exercise or physical job)</option>
+            </select><br>
+
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        </form>
+    </section>
+
+    <section id="generated-meal-plan">
+        <h2>Your Weekly Meal Plan</h2>
+        <div id="mealPlan">
+            <!-- Dynamic meal plan will be displayed here -->
+        </div>
+
+        <button id="savePdfBtn" onclick="saveAsPDF()">Save/Download Meal Plan</button>
+    </section>
+
+    <section id="additional-features">
+        <h2>Additional Features</h2>
+
+        <!-- Meal Swap Option -->
+        <div>
+            <h3>Meal Swap</h3>
+            <p>Don’t like a meal? Swap it with a similar option.</p>
+            <select id="mealSwap">
+                <option value="meal1">Meal Option 1</option>
+                <option value="meal2">Meal Option 2</option>
+                <option value="meal3">Meal Option 3</option>
+            </select>
+            <button onclick="swapMeal()">Swap Meal</button>
+        </div>
+
+        <!-- Shopping List Generator -->
+        <div>
+            <h3>Shopping List Generator</h3>
+            <button onclick="generateShoppingList()">Generate Shopping List</button>
+            <div id="shoppingList">
+                <!-- Shopping list will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Placeholder JavaScript functions to handle meal plan generation and additional features.
+
+        function generateMealPlan() {
+            // Implement calorie calculation, meal generation logic
+            document.getElementById('mealPlan').innerHTML = `
+                <h3>Day 1:</h3>
+                <ul>
+                    <li>Breakfast: Oatmeal with Berries (400 kcal, 20g protein, 50g carbs, 10g fats)</li>
+                    <li>Lunch: Grilled Chicken Salad (500 kcal, 40g protein, 20g carbs, 25g fats)</li>
+                    <li>Dinner: Salmon with Quinoa (600 kcal, 35g protein, 60g carbs, 20g fats)</li>
+                    <li>Snacks: Almonds (200 kcal, 5g protein, 7g carbs, 18g fats)</li>
+                </ul>
+                <h3>Day 2: (and so on for the week)</h3>
+            `;
+        }
+
+        function saveAsPDF() {
+            // Implement PDF saving logic
+            alert("Saving as PDF (functionality not yet implemented)");
+        }
+
+        function swapMeal() {
+            // Implement meal swapping logic
+            alert("Meal swapped (functionality not yet implemented)");
+        }
+
+        function generateShoppingList() {
+            // Implement shopping list generation logic
+            document.getElementById('shoppingList').innerHTML = `
+                <h4>Shopping List:</h4>
+                <ul>
+                    <li>Oats</li>
+                    <li>Berries</li>
+                    <li>Grilled Chicken</li>
+                    <li>Salmon</li>
+                    <li>Quinoa</li>
+                    <li>Almonds</li>
+                </ul>
+            `;
+        }
+    </script>
+</body>
+</html>
